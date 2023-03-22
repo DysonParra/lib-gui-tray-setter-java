@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {TrayIconSetterConstant} se encarga de realizar tareas específicas.
+ * @fileoverview    {TrayIconSetterConstant}
  *
  * @version         2.0
  *
