@@ -18,7 +18,7 @@ package com.project.dev.tray.setter;
  * TODO: Definición de {@code TrayIconSetterConstant}.
  *
  * @author Dyson Parra
- * @since 1.8
+ * @since 11
  */
 public interface TrayIconSetterConstant {
 

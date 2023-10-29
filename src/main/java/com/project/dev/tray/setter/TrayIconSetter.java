@@ -34,7 +34,7 @@ import static java.awt.Frame.NORMAL;
  * TODO: Definición de {@code TrayIconSetter}.
  *
  * @author Dyson Parra
- * @since 1.8
+ * @since 11
  */
 public class TrayIconSetter implements TrayIconSetterConstant {
 
