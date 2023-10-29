@@ -31,7 +31,7 @@ import static java.awt.Frame.MAXIMIZED_BOTH;
 import static java.awt.Frame.NORMAL;
 
 /**
- * TODO: Definición de {@code TrayIconSetter}.
+ * TODO: Description of {@code TrayIconSetter}.
  *
  * @author Dyson Parra
  * @since 11
@@ -39,7 +39,7 @@ import static java.awt.Frame.NORMAL;
 public class TrayIconSetter implements TrayIconSetterConstant {
 
     /**
-     * FIXME: Definición de {@code setTrayIconToFrame}. Agrega un TrayIcon a un JFrame.
+     * FIXME: Description of {@code setTrayIconToFrame}. Agrega un TrayIcon a un JFrame.
      *
      * @param frame es el JFrame al que se le agregará un TrayIcon.
      * @return Si fue posible asignar un trayIcon.
