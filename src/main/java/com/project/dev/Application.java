@@ -14,9 +14,9 @@
  */
 package com.project.dev;
 
-import com.project.dev.tray.setter.TrayIconSetter;
-import javax.swing.ImageIcon;
-import javax.swing.JFrame;
+import com.project.dev.tester.AppTester;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 /**
  * TODO: Description of {@code Application}.
@@ -26,28 +26,17 @@ import javax.swing.JFrame;
  */
 public class Application {
 
+    private static final SimpleDateFormat DATE_FORMAT = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+
     /**
      * Entrada principal del sistema.
      *
      * @param args argumentos de la linea de comandos.
      */
     public static void main(String[] args) {
-        JFrame frame = new JFrame();
-        frame.setSize(320, 240);
-        frame.setTitle("Tray setter example");
-
-        // Agrega imagen al JFrame usando ruta relativa.
-        //frame.setIconImage(new ImageIcon(TrayIconSetter.LINUX_ICON_PROJ_PATH).getImage());
-        // Agrega imagen al JFrame usando un resource.
-        frame.setIconImage(
-                new ImageIcon(Application.class.getResource(TrayIconSetter.LINUX_ICON_RES_PATH))
-                        .getImage());
-
-        // Agrega el JFrame al área de notificación.
-        TrayIconSetter.setTrayIconToFrame(frame);
-
-        frame.setVisible(true);
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        System.out.printf("\nStart date: %s\n\n", DATE_FORMAT.format(new Date()));
+        System.out.printf("\nResult: %s\n", AppTester.startTesting(args));
+        System.out.printf("\nEnd date:   %s\n", DATE_FORMAT.format(new Date()));
     }
 
 }
