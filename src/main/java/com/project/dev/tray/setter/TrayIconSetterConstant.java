@@ -1,5 +1,5 @@
 /*
- * @fileoverview    {TrayIconSetterConstant}
+ * @overview        {TrayIconSetterConstant}
  *
  * @version         2.0
  *
